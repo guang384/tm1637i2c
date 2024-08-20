@@ -140,3 +140,7 @@ class TM1637I2C:
                      self.DIGITS[hundreds] | self.SEGMENT_DECIMAL_POINT if colon else self.DIGITS[hundreds] , 
                      self.DIGITS[tens], 
                      self.DIGITS[ones])
+
+
+    def close(self):
+        self.i2c.close()

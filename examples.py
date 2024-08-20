@@ -74,3 +74,5 @@ dev.display(
 time.sleep(0.07)
 dev.brightness(TM1637I2C.BRIGHTNESS_LEVEL_2)
 print('all done.')
+
+dev.close()
